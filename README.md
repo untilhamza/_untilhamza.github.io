@@ -42,7 +42,6 @@
 ✔️ Projects\
 ✔️ Blogs\
 ✔️ Contact\
-✔️ Experience\
 
 ## Tools Used 🛠️
 
