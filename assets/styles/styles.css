@@ -167,8 +167,8 @@ section {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-white);
-  width: 3rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,6 +210,10 @@ section {
             transform: translateY(-50%);
     width: 0;
   }
+  .controls .control {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .theme-btn {
@@ -245,6 +249,15 @@ section {
   font-size: 1.4rem;
   color: var(--color-grey-2);
   pointer-events: none;
+}
+
+@media (min-width: 1000px) {
+  .theme-btn {
+    top: 5%;
+    right: 3%;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .header-content {
@@ -371,6 +384,8 @@ section {
 @media (min-width: 1500px) {
   .header-content .right-header {
     margin-top: 6rem;
+    padding-top: 5rem;
+    padding-right: 10rem;
   }
 }
 
@@ -560,6 +575,33 @@ section {
   width: 96%;
 }
 
+.about-stats .about-more-skills {
+  margin-top: 2rem;
+}
+
+.about-stats .about-more-skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-stats .about-more-skills ul li {
+  padding: 0.2rem 0.6rem;
+  background-color: var(--color-secondary);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
 @media (min-width: 1000px) {
   .about-stats {
     margin-right: 10rem;
@@ -582,12 +624,12 @@ section {
   content: "";
   position: absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 0;
   width: 40%;
   height: 1px;
   background-color: var(--color-grey-5);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 .timeline {
@@ -657,8 +699,10 @@ section {
 }
 
 @media (min-width: 1000px) {
-  .timeline {
+  .about-timeline {
     margin-right: 10rem;
+  }
+  .about-timeline .timeline {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     padding-bottom: 6rem;
