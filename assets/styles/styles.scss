@@ -384,16 +384,20 @@ section {
     }
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .about-container {
-    margin-right: 10rem;
-    grid-template-columns: repeat(2, 1fr);
     .right-about {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   .left-about {
     padding-right: 5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .about-container {
+    margin-right: 10rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .about-stats {
@@ -471,12 +475,16 @@ section {
     }
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .about-stats {
-    margin-right: 10rem;
     .progress-bars {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+}
+@media (min-width: 1000px) {
+  .about-stats {
+    margin-right: 10rem;
   }
 }
 .stat-title {
@@ -550,14 +558,17 @@ section {
     }
   }
 }
-
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .about-timeline {
-    margin-right: 10rem;
     .timeline {
       grid-template-columns: repeat(2, 1fr);
       padding-bottom: 6rem;
     }
+  }
+}
+@media (min-width: 1000px) {
+  .about-timeline {
+    margin-right: 10rem;
   }
 }
 
@@ -635,11 +646,15 @@ section {
     }
   }
 }
+@media (min-width: 800px) {
+  .portfolios {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 6rem;
+  }
+}
 @media (min-width: 1000px) {
   .portfolios {
     margin-right: 10rem;
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 6rem;
   }
 }
 @media (min-width: 1200px) {
@@ -710,10 +725,15 @@ section {
     }
   }
 }
+@media (min-width: 800px) {
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 6rem;
+  }
+}
 @media (min-width: 1000px) {
   .blogs {
     margin-right: 10rem;
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1200px) {
@@ -875,6 +895,7 @@ section {
     }
   }
 }
+
 @media (min-width: 1000px) {
   .contact-content-con {
     flex-direction: row;

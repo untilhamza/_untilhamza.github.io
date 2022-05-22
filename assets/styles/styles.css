@@ -480,18 +480,21 @@ section {
   text-transform: uppercase;
 }
 
-@media (min-width: 1000px) {
-  .about-container {
-    margin-right: 10rem;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
+@media (min-width: 800px) {
   .about-container .right-about {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
   .left-about {
     padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-container {
+    margin-right: 10rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -602,13 +605,16 @@ section {
   color: var(--color-white);
 }
 
-@media (min-width: 1000px) {
-  .about-stats {
-    margin-right: 10rem;
-  }
+@media (min-width: 800px) {
   .about-stats .progress-bars {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-stats {
+    margin-right: 10rem;
   }
 }
 
@@ -698,14 +704,17 @@ section {
   color: var(--color-grey-2);
 }
 
-@media (min-width: 1000px) {
-  .about-timeline {
-    margin-right: 10rem;
-  }
+@media (min-width: 800px) {
   .about-timeline .timeline {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-timeline {
+    margin-right: 10rem;
   }
 }
 
@@ -816,12 +825,17 @@ section {
   color: var(--color-primary);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .portfolios {
-    margin-right: 10rem;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .portfolios {
+    margin-right: 10rem;
   }
 }
 
@@ -920,11 +934,17 @@ section {
   padding-bottom: 1rem;
 }
 
+@media (min-width: 800px) {
+  .blogs {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 6rem;
+  }
+}
+
 @media (min-width: 1000px) {
   .blogs {
     margin-right: 10rem;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
   }
 }
 

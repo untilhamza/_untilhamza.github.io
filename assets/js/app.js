@@ -5,7 +5,7 @@
       this.classList.add("active-btn");
       document.querySelector(".active").classList.remove("active");
       document.getElementById(button.dataset.id).classList.add("active");
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   });
   document.querySelector(".theme-btn").addEventListener("click", () => {
