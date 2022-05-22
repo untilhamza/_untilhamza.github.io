@@ -486,7 +486,7 @@ section {
         grid-template-columns: repeat(2, 1fr);
   }
   .left-about {
-    padding-right: 5rem;
+    padding-right: 1rem;
   }
 }
 
@@ -1188,9 +1188,6 @@ section {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-right: 10rem;
-  }
-  .contact-content-con .left-contact {
-    margin-right: 3rem;
   }
   .contact-content-con .left-contact h4 {
     font-size: 2rem;
